@@ -171,6 +171,9 @@ const Footer = () => {
                     <Typography variant="body2" sx={{ opacity: 0.7 }}>
                         Designed and Developed by <Link href="#" color="primary" underline="hover">HET</Link>
                     </Typography>
+                    <Typography variant="body2" sx={{ opacity: 0.7 }}>
+                        v0.0.1
+                    </Typography>
                 </Container>
             </Box>
         </Box>
