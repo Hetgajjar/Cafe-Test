@@ -1,0 +1,16 @@
+# Blender 4.5.0 MTL File: 'None'
+# www.blender.org
+
+newmtl tripo_mat_25d6118d-b24f-45a7-9720-d1482fbb3541
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd coffeecup3dmodel_basecolor.JPEG
+map_Ns coffeecup3dmodel_roughness.JPEG
+map_Pr coffeecup3dmodel_roughness.JPEG
+map_refl coffeecup3dmodel_metallic.JPEG
+map_Pm coffeecup3dmodel_metallic.JPEG
+map_Bump -bm 1.000000 coffeecup3dmodel_normal.JPEG

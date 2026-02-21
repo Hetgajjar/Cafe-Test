@@ -1,0 +1,85 @@
+// Reset & Base
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #1E1C1A; // Warm dark background
+    color: #EDE0D4; // Soft steamed milk text
+    overflow-x: hidden;
+}
+
+::selection {
+    background: #DDB892; // Pale Wood
+    color: #1E1C1A;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Glassmorphism Pattern (BEM)
+.glass-card {
+    background: rgba(30, 28, 26, 0.6); // Darker warm glass
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(221, 184, 146, 0.1); // Subtle warm border
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 2.5rem;
+    color: #EDE0D4;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        background 0.4s ease,
+        box-shadow 0.4s ease;
+
+    &--hover:hover {
+        background: rgba(221, 184, 146, 0.05);
+        border-color: rgba(221, 184, 146, 0.3);
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    &__title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #DDB892; // Pale Wood accent
+    }
+}
+
+// Layout Utilities
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    &__heading {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        color: #DDB892;
+        text-shadow: 0 2px 10px rgba(221, 184, 146, 0.1);
+    }
+
+    &__sub {
+        font-size: 1.1rem;
+        opacity: 0.8;
+    }
+}
